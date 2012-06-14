@@ -84,9 +84,9 @@ function sendRequest() {
       var headers = $("#headers").val();
       headers = headers.split("\n");
       for (var i = 0; i < headers.length; i++) {
-        var header = headers[i].split(": ");
+        var header = headers[i].split(/[:=]/);
         if (header[1])
-            xhr.setRequestHeader(header[0],header[1]);
+            xhr.setRequestHeader(header[0],header[1].trim());
       }
       if(jQuery.inArray($("input[type=radio]:checked").val(), ["post", "put"]) > -1) {
         xhr.send($("#postputdata").val());
