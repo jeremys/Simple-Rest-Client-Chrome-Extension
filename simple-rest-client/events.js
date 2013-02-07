@@ -1,7 +1,9 @@
-<html><head><script>
-var extension_url = 'chrome-extension://'+location.host+'/index.html';
+function getExtensionUrl() {
+  return 'chrome-extension://'+location.host+'/index.html';
+}
+
 function isOptionsUrl(url) {
-  if(url == extension_url) {
+  if(url == getExtensionUrl()) {
     return true;
   }
   return false;
@@ -15,12 +17,10 @@ function goToOptions() {
         return;
       }
     }
-    chrome.tabs.create({url: extension_url});
+    chrome.tabs.create({url: getExtensionUrl()});
   });
 }
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
   goToOptions();
 });
-</script>
-</head><body></body></html>
