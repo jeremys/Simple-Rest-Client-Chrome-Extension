@@ -88,7 +88,7 @@ function sendRequest() {
         if (header[1])
             xhr.setRequestHeader(header[0],header[1]);
       }
-      if(jQuery.inArray($("input[type=radio]:checked").val(), ["post", "put"]) > -1) {
+      if(jQuery.inArray($("input[type=radio]:checked").val(), ["post", "put", "PATCH"]) > -1) {
         xhr.send($("#postputdata").val());
       } else {
         xhr.send("");
@@ -155,7 +155,7 @@ function readResponse() {
 }
 
 function toggleData() {
-  if(jQuery.inArray($("input[type=radio]:checked").val(), ["post", "put"]) > -1) {
+  if(jQuery.inArray($("input[type=radio]:checked").val(), ["post", "put", "PATCH"]) > -1) {
     $("#data").css("display", "");
   } else {
     $("#data").css("display", "none");
