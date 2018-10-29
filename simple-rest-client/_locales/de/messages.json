@@ -1,0 +1,18 @@
+{
+  "name": {"message": "Simple REST Client"},
+  "description": {"message": "Erstellen Sie benutzerdefinierte HTTP-Anfragen, um Ihre Webdienste direkt zu testen."},
+  "request": {"message": "Anfrage"},
+  "debuglink": {"message": "Debug link"},
+  "url": {"message": "URL:"},
+  "method": {"message": "Methode:"},
+  "headers": {"message": "Kopfzeilen:"},
+  "data": {"message": "Daten:"},
+  "send": {"message": "Senden"},
+  "clear": {"message": "Löschen"},
+  "response": {"message": "Antwort"},
+  "processing": {"message": "Verarbeitung"},
+  "status": {"message": "Status:"},
+  "bad_request": {"message": "Schlechte Anfrage"},
+  "source": {"message": "<a href='http://github.com/jeremys/Simple-Rest-Client-Chrome-Extension'>Quellcode</a> lizensiert unter der Apache Lizenz"},
+  "icon": {"message": "Symbol von <a href='http://jasonrayner.deviantart.com/art/Internet-Icon-icns-and-png-130014831'>Jason Rayner</a>"}
+}
